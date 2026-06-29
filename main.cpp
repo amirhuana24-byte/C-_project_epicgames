@@ -5,6 +5,7 @@
 #include "GTA.h"
 #include "Deltarune.h"
 #include "PapersPlease.h"
+#include "DaveTheDiver.h"
 
 #include "IBuyable.h"
 #include "IPlayable.h"
@@ -30,7 +31,7 @@ int main(){
             int type, id;
             double price;
 
-            cout << "1-GTA 2-Deltarune 3-PapersPlease\n";
+            cout << "1-GTA 2-Deltarune 3-PapersPlease 4-Dave the Diver " << endl;
             cin >> type;
 
             cout << "ID: ";
@@ -43,8 +44,10 @@ int main(){
                 games.push_back(new GTA("GTA", id, price));
             else if(type == 2)
                 games.push_back(new Deltarune("Deltarune", id, price));
-            else
+            else if(type == 3)
                 games.push_back(new PapersPlease("Papers Please", id, price));
+            else if(type == 4)
+                games.push_back(new DaveTheDiver("Dave the Diver", id, price));
         }
 
         else if(choice == 2){
