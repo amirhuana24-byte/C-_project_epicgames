@@ -1,8 +1,8 @@
 #pragma once
 #include "Game.h"
-#include "../interfaces/IBuyable.h"
-#include "../interfaces/IPlayable.h"
-#include "../interfaces/IRateable.h"
+#include "IBuyable.h"
+#include "IPlayable.h"
+#include "IRateable.h"
 
 class PapersPlease : public Game, public IBuyable, public IPlayable, public IRateable {
 private:

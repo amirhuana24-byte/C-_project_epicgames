@@ -1,13 +1,14 @@
 #include <iostream>
 #include <vector>
 
-#include "models/GTA.h"
-#include "models/Deltarune.h"
-#include "models/PapersPlease.h"
+#include "Game.h"
+#include "GTA.h"
+#include "Deltarune.h"
+#include "PapersPlease.h"
 
-#include "interfaces/IBuyable.h"
-#include "interfaces/IPlayable.h"
-#include "interfaces/IRateable.h"
+#include "IBuyable.h"
+#include "IPlayable.h"
+#include "IRateable.h"
 
 using namespace std;
 
